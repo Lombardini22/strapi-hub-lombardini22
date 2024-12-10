@@ -4,17 +4,28 @@
   "info": {
     "singularName": "header",
     "pluralName": "headers",
-    "displayName": "Header"
+    "displayName": "Header",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Header": {
+    "company_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "menu_items": {
       "type": "component",
-      "repeatable": false,
-      "component": "header.header"
+      "repeatable": true,
+      "component": "header-menu-item.header-menu-item"
     }
   }
 }
