@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "venues",
+  "info": {
+    "singularName": "venue",
+    "pluralName": "venues",
+    "displayName": "Venue",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "gallery_carousel": {
+      "displayName": "Carousel",
+      "type": "component",
+      "repeatable": false,
+      "component": "carousel.carousel"
+    },
+    "first_marquee": {
+      "type": "component",
+      "repeatable": false,
+      "component": "marquee.marquee"
+    },
+    "floor_plans_carousel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "carousel.carousel"
+    },
+    "hero_text_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "venue-text-section.venue-text-section"
+    },
+    "events_text_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "venue-text-section.venue-text-section"
+    },
+    "second_marquee": {
+      "type": "component",
+      "repeatable": false,
+      "component": "marquee.marquee"
+    },
+    "location_text_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "venue-text-section.venue-text-section"
+    }
+  }
+}

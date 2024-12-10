@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_marquee_marquees",
+  "info": {
+    "displayName": "Marquee",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

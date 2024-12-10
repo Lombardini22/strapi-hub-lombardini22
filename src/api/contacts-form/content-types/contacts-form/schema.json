@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts_forms",
+  "info": {
+    "singularName": "contacts-form",
+    "pluralName": "contacts-forms",
+    "displayName": "Contacts Form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "contacts": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

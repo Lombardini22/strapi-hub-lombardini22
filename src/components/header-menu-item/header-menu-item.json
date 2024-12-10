@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_header_menu_item_header_menu_items",
+  "info": {
+    "displayName": "header_menu_item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "box_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

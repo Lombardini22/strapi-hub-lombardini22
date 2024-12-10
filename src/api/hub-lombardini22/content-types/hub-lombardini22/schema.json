@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "hub_lombardini22s",
+  "info": {
+    "singularName": "hub-lombardini22",
+    "pluralName": "hub-lombardini22s",
+    "displayName": "HubLombardini22",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_paragraph": {
+      "type": "text"
+    },
+    "animation_sentences": {
+      "type": "component",
+      "repeatable": true,
+      "component": "string.string"
+    }
+  }
+}

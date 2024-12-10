@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_header_headers",
+  "info": {
+    "displayName": "Header"
+  },
+  "options": {},
+  "attributes": {
+    "company_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "menu_items": {
+      "displayName": "header_menu_item",
+      "type": "component",
+      "repeatable": true,
+      "component": "header-menu-item.header-menu-item"
+    }
+  }
+}
