@@ -17,6 +17,24 @@
         "videos",
         "audios"
       ]
+    },
+    "paragraph": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "button.button"
+    },
+    "slides_mobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

@@ -19,6 +19,12 @@
       "type": "component",
       "repeatable": true,
       "component": "string.string"
+    },
+    "hero_cta": {
+      "displayName": "Button",
+      "type": "component",
+      "repeatable": false,
+      "component": "button.button"
     }
   }
 }

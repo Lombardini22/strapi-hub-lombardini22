@@ -401,6 +401,7 @@ export interface ApiCallToActionCallToAction extends Struct.SingleTypeSchema {
 export interface ApiContactsFormContactsForm extends Struct.SingleTypeSchema {
   collectionName: 'contacts_forms';
   info: {
+    description: '';
     displayName: 'Contacts Form';
     pluralName: 'contacts-forms';
     singularName: 'contacts-form';
@@ -413,6 +414,7 @@ export interface ApiContactsFormContactsForm extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cta_label: Schema.Attribute.String;
     description: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -508,6 +510,7 @@ export interface ApiHubLombardini22HubLombardini22
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    hero_cta: Schema.Attribute.Component<'button.button', false>;
     hero_paragraph: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<

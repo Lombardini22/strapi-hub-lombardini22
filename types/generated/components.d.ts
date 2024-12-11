@@ -1,5 +1,16 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface ButtonButton extends Struct.ComponentSchema {
+  collectionName: 'components_button_buttons';
+  info: {
+    displayName: 'Button';
+  };
+  attributes: {
+    href: Schema.Attribute.String;
+    label: Schema.Attribute.String;
+  };
+}
+
 export interface CarouselCarousel extends Struct.ComponentSchema {
   collectionName: 'components_carousel_carousels';
   info: {
@@ -8,7 +19,13 @@ export interface CarouselCarousel extends Struct.ComponentSchema {
     icon: 'picture';
   };
   attributes: {
+    cta: Schema.Attribute.Component<'button.button', false>;
+    paragraph: Schema.Attribute.String;
     slides: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    slides_mobile: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
@@ -100,6 +117,7 @@ export interface VenueTextSectionVenueTextSection
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'button.button': ButtonButton;
       'carousel.carousel': CarouselCarousel;
       'footer.footer': FooterFooter;
       'header-menu-item.header-menu-item': HeaderMenuItemHeaderMenuItem;
