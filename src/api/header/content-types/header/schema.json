@@ -12,16 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "company_logo": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "menu_items": {
       "type": "component",
       "repeatable": true,

@@ -54,7 +54,6 @@ export interface HeaderMenuItemHeaderMenuItem extends Struct.ComponentSchema {
     displayName: 'header_menu_item';
   };
   attributes: {
-    box_icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     href: Schema.Attribute.String;
     label: Schema.Attribute.String;
   };
@@ -106,11 +105,7 @@ export interface VenueTextSectionVenueTextSection
     displayName: 'Venue Text Section';
   };
   attributes: {
-    handwriting: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
     paragraph: Schema.Attribute.Text;
-    underline: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 

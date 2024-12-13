@@ -416,7 +416,6 @@ export interface ApiContactsFormContactsForm extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     cta_label: Schema.Attribute.String;
     description: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -470,9 +469,6 @@ export interface ApiHeaderHeader extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    company_logo: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

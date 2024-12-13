@@ -6,16 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "box_icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "label": {
       "type": "string"
     },
