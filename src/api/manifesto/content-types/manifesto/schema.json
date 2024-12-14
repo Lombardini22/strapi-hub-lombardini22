@@ -4,7 +4,8 @@
   "info": {
     "singularName": "manifesto",
     "pluralName": "manifestos",
-    "displayName": "Manifesto"
+    "displayName": "Manifesto",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,17 @@
   "pluginOptions": {},
   "attributes": {
     "hero_video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mobile_hero_video": {
       "allowedTypes": [
         "images",
         "files",

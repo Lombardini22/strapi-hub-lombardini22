@@ -524,6 +524,7 @@ export interface ApiHubLombardini22HubLombardini22
 export interface ApiManifestoManifesto extends Struct.SingleTypeSchema {
   collectionName: 'manifestos';
   info: {
+    description: '';
     displayName: 'Manifesto';
     pluralName: 'manifestos';
     singularName: 'manifesto';
@@ -544,6 +545,9 @@ export interface ApiManifestoManifesto extends Struct.SingleTypeSchema {
       'api::manifesto.manifesto'
     > &
       Schema.Attribute.Private;
+    mobile_hero_video: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
