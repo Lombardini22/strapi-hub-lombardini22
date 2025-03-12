@@ -10,7 +10,11 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "hero_video": {
       "type": "media",
@@ -21,43 +25,91 @@
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "gallery_carousel": {
       "displayName": "Carousel",
       "type": "component",
       "repeatable": false,
-      "component": "carousel.carousel"
+      "component": "carousel.carousel",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "first_marquee": {
       "type": "component",
       "repeatable": false,
-      "component": "marquee.marquee"
+      "component": "marquee.marquee",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "floor_plans_carousel": {
       "type": "component",
       "repeatable": false,
-      "component": "carousel.carousel"
+      "component": "carousel.carousel",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "hero_text_section": {
       "type": "component",
       "repeatable": false,
-      "component": "venue-text-section.venue-text-section"
+      "component": "venue-text-section.venue-text-section",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "events_text_section": {
       "type": "component",
       "repeatable": false,
-      "component": "venue-text-section.venue-text-section"
+      "component": "venue-text-section.venue-text-section",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "second_marquee": {
       "type": "component",
       "repeatable": false,
-      "component": "marquee.marquee"
+      "component": "marquee.marquee",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "location_text_section": {
       "type": "component",
       "repeatable": false,
-      "component": "venue-text-section.venue-text-section"
+      "component": "venue-text-section.venue-text-section",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "location_coordinates": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
